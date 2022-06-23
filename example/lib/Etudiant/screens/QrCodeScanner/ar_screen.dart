@@ -310,20 +310,8 @@ void _onArCoreViewCreated(ArCoreController controller) {
         scale: vector.Vector3.all(0.00005),
         name: "Toucano",
         objectUrl:
-        // widget.modelUrl,
-        // "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF/Duck.gltf",
-        // "https://github.com/ismail-ERK/models-ar/blob/master/Lego.gltf?raw=true",
-        // "https://github.com/ismail-ERK/models-ar/blob/master/mod1.gltf",
-        // "https://github.com/ismail-ERK/models-ar/blob/master/EPal03.3dm",
-        // "https://github.com/ladybug-tools/3d-models/blob/master/gltf-sample-files/2021/2CylinderEngine.gltf",
-        // "https://raw.githubusercontent.com/ismail-ERK/models-ar/master/model1/mod1.gltf",
-        // "https://raw.githubusercontent.com/ismail-ERK/models-ar/master/mod2/mod2.gltf",
-        // "https://raw.githubusercontent.com/Ahmed2000Github/Models/master/sun/sun.gltf",
 
-        // "https://raw.githubusercontent.com/ismail-ERK/models-ar/master/mod3/"+widget.modelUrl+".gltf",
-        // "https://raw.githubusercontent.com/ismail-ERK/models-ar/master/mod3/mod2.gltf",
         Utils.RootUrl+widget.modelUrl,
-        // "https://github.com/Ahmed2000Github/Models/blob/master/earth/earth.gltf ",
 
         position: plane.pose.translation,
 
