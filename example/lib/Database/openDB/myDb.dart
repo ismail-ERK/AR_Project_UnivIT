@@ -4,6 +4,9 @@ import 'package:arcore_flutter_plugin_example/Database/models/User.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
+// *******************************************************************************************************
+// *****************************[UnivIT : Errouk Ismail] **************************************************
+// *******************************************************************************************************
 class DatabaseHelper {
   DatabaseHelper._privateConstructor();
   static final DatabaseHelper instance = DatabaseHelper._privateConstructor();

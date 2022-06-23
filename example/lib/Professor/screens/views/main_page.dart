@@ -21,33 +21,6 @@ class MainPage extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.blueAccent,
-        items: <Widget>[
-          Icon(Icons.home, size: 30),
-          Icon(Icons.settings, size: 30),
-          Icon(Icons.person, size: 30),
-        ],
-        onTap: (index) {
-          //Handle button tap
-          print(index);
-          switch (index) {
-            case 0:
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => WelcomePage()));
-              break;
-            case 1:
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => WelcomePage()));
-              break;
-            case 2:
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => WelcomePage()));
-              break;
-            default:
-          }
-        },
-      ),
     );
   }
 }

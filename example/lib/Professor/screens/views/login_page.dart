@@ -11,6 +11,9 @@ import 'package:http/http.dart' as http;
 import '../../../Etudiant/models/utils.dart';
 import '../../../Etudiant/screens/views/home_page.dart';
 
+
+// [UnivIt Errouk Ismail]
+
 class LoginPageProf extends StatefulWidget {
   const LoginPageProf({Key key}) : super(key: key);
 
@@ -168,11 +171,11 @@ class _LoginPageProfState extends State<LoginPageProf> {
                       minWidth: double.infinity,
                       height: 60,
                       onPressed: () async {
-                        Navigator.push(context,
-                         MaterialPageRoute(builder: (context)=>WelcomePageProf())
-                         );
+                        // Navigator.push(context,
+                        //  MaterialPageRoute(builder: (context)=>WelcomePageProf())
+                        //  );
                         // Auth Mobile est commenté car le backend n'est pas encore prêt
-                        // await doAuth(context);
+                        await doAuth(context);
                       },
                       color: Color(0xff0095FF),
                       elevation: 0,

@@ -50,7 +50,7 @@ class _AppStateQr extends State<NewScanNewQr> {
       onWillPop: () {
         Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(builder: (context) => ScanneList()),
-          (Route<dynamic> route) => false,
+              (Route<dynamic> route) => false,
         );
       },
       child: Scaffold(
@@ -60,7 +60,7 @@ class _AppStateQr extends State<NewScanNewQr> {
               onPressed: () {
                 Navigator.of(context).pushAndRemoveUntil(
                   MaterialPageRoute(builder: (context) => ScanneList()),
-                  (Route<dynamic> route) => false,
+                      (Route<dynamic> route) => false,
                 );
               },
               icon: Icon(Icons.arrow_back),
@@ -72,24 +72,24 @@ class _AppStateQr extends State<NewScanNewQr> {
                 Text("Vous devez scanner un qr de vos cours"),
               Center(
                   child: Column(
-                children: [
-                  Image(
-                      image: NetworkImage(
-                          "https://media.istockphoto.com/vectors/qr-code-scan-phone-icon-in-comic-style-scanner-in-smartphone-vector-vector-id1166145556")),
-                  FlatButton(
-                    padding: EdgeInsets.all(15.0),
-                    onPressed: () => _scanQr(context),
-                    child: Text(
-                      "Scan Qr Code",
-                      style: TextStyle(
-                          color: Colors.blue, fontWeight: FontWeight.bold),
-                    ),
-                    shape: RoundedRectangleBorder(
-                        side: BorderSide(color: Colors.blue, width: 3.0),
-                        borderRadius: BorderRadius.circular(20.0)),
-                  ),
-                ],
-              ))
+                    children: [
+                      Image(
+                          image: NetworkImage(
+                              "https://media.istockphoto.com/vectors/qr-code-scan-phone-icon-in-comic-style-scanner-in-smartphone-vector-vector-id1166145556")),
+                      FlatButton(
+                        padding: EdgeInsets.all(15.0),
+                        onPressed: () => _scanQr(context),
+                        child: Text(
+                          "Scan Qr Code",
+                          style: TextStyle(
+                              color: Colors.blue, fontWeight: FontWeight.bold),
+                        ),
+                        shape: RoundedRectangleBorder(
+                            side: BorderSide(color: Colors.blue, width: 3.0),
+                            borderRadius: BorderRadius.circular(20.0)),
+                      ),
+                    ],
+                  ))
             ],
           )),
     );
@@ -135,7 +135,9 @@ class _AppStateQr extends State<NewScanNewQr> {
   }
 }
 
-// [UnivIt : Errouk Ismail]
+// *******************************************************************************************************
+// *****************************[UnivIT : Errouk Ismail] **************************************************
+// *******************************************************************************************************
 Widget flatButton(BuildContext context, String text, Widget widget) {
   return FlatButton(
     padding: EdgeInsets.all(15.0),

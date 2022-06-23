@@ -125,6 +125,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   OnboardNavBtn(
                     name: 'Skip',
                     onPressed: (){
+
                        Navigator.push(context,
                             MaterialPageRoute(builder: (context)=>HomePage())
                             );

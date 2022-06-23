@@ -10,6 +10,9 @@ import '../size_configs.dart';
 import '../views/login_page.dart';
 import '../../../Professor/screens/views/login_page.dart';
 import '../views/welcome_page.dart';
+// *******************************************************************************************************
+// *****************************[UnivIT : Errouk Ismail]**************************************************
+// *******************************************************************************************************
 Future<bool> isLoggedStudent(BuildContext context) async {
   dynamic user ="";
   await DatabaseHelper.instance.getUsers().then((value) => {
@@ -26,6 +29,9 @@ Future<bool> isLoggedStudent(BuildContext context) async {
   return false;
   }
 }
+// *******************************************************************************************************
+// *****************************[UnivIT : Errouk Ismail]**************************************************
+// *******************************************************************************************************
 Future<bool> isLoggedProf(BuildContext context) async {
   dynamic user ="";
   await DatabaseHelper.instance.getUsers().then((value) => {
@@ -116,6 +122,9 @@ class BottomNavBar extends StatelessWidget {
                          title: "Teacher Area",
                          svgSrc: "assets/images/prof.svg",
                           press: () async {
+// *******************************************************************************************************
+// *****************************[UnivIT : Errouk Ismail] => Tester si le prof est deja logger*************
+// *******************************************************************************************************
                             bool logged = await isLoggedProf(context);
                             if (logged == true) {
                               Navigator.push(context, MaterialPageRoute(
@@ -129,6 +138,9 @@ class BottomNavBar extends StatelessWidget {
                          title: "Student Area",
                          svgSrc: "assets/images/student.svg",
                           press: () async{
+// *******************************************************************************************************
+// *****************************[UnivIT : Errouk Ismail] => Tester si l'etudiant est deja logger*************
+// *******************************************************************************************************
                           bool logged = await isLoggedStudent(context);
                           print(logged.toString());
                           if (logged == true) {
